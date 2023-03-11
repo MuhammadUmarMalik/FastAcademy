@@ -1,14 +1,15 @@
 import { StyleSheet } from "react-native";
-import color from "../../Theme/DesignSystem";
+import { colors, typography } from "../../Theme/DesignSystem";
 const style = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: color.primary,
+    backgroundColor: colors.primary,
+    justifyContent: "center",
+    alignItems: "center",
   },
   logo: {
-    justifyContent: "center",
-    alignSelf: "center",
-    marginVertical: 20,
+    width: "60%",
+    height: "21%",
   },
 });
 

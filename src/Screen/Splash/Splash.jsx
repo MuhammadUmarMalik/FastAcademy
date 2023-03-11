@@ -1,14 +1,15 @@
-import { View, Button, StyleSheet, Image } from "react-native";
-import React from "react";
+import { View, Button, Text, Image, navigation } from "react-native";
 import { style } from "./Style_Splash";
-import Logo from "../../Assets/Logo.png";
+import Fast from "../../Assets/Fast.png";
 
-const Splash = () => {
+const Splash = ({ navigation }) => {
+  setTimeout(() => {
+    navigation.navigate("Valid");
+  }, 2000);
+
   return (
     <View style={style.container}>
-      <Image source={Logo} style={style.logo} />
-      <Button title="signup" />
-      <Button title="signin" />
+      <Image source={Fast} style={style.logo} />
     </View>
   );
 };
